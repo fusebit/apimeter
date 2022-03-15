@@ -1,0 +1,26 @@
+{
+  "name": "@fusebit/apimeter",
+  "version": "1.0.0",
+  "description": "Simple API metering for Express apps using BigQuery",
+  "main": "build/index.js",
+  "typings": "build/index",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --colors",
+    "sample": "node sample/server.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "MIT",
+  "author": "https://fusebit.io",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "express": "^4.17.3",
+    "jest": "^24.9.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.11.0"
+  }
+}
