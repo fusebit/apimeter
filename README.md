@@ -26,7 +26,7 @@ npm run build
 nmp run sample
 ```
 
-**NOTE** If you have selected Google Cloud project name, dataset name, or table name different from the ones in the [setup instructions][SETUP.md], make sure to update respective names in [sample/server.js](sample/server.js) before running the sample server.
+**NOTE** If you have selected Google Cloud project name, dataset name, or table name different from the ones in the [setup instructions](SETUP.md), make sure to update respective names in [sample/server.js](sample/server.js) before running the sample server.
 
 Lastly, issue some test requests to the sample HTTP API server:
 
