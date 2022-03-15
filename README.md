@@ -8,7 +8,7 @@ If you have an Express app you want to instrument, you can do it in under 10 min
 
 ## Getting started
 
-First, set up a BigQuery table in Google Cloud using the instructions [here][SETUP.md].
+First, set up a BigQuery table in Google Cloud using the instructions [here](SETUP.md).
 
 Next, create a Google Cloud service account with permissions to the BigQuery table, add API keys to that account, and export them to a JSON file using the instructions [here](https://cloud.google.com/docs/authentication/production). Set the environment variable to point to the JSON file with those credentials:
 
