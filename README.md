@@ -58,7 +58,7 @@ app.use(apimeter());
 The default configuation:
 1. Logs metering data to the `apimeter` Google Cloud project, `dwh` dataset, and `apicalls` BigQuery table. 
 1. Collects events in-memory and uploads them to BigQuery in batches when 500 records accumulate or every 5 seconds, whichever comes first. 
-1. The service accounts credentials must be in a JSON file pointed to by the `GOOGLE_APPLICATION_CREDENTIALS` environment variable.
+1. The service account credentials must be in a JSON file pointed to by the `GOOGLE_APPLICATION_CREDENTIALS` environment variable.
 
 ## Custom BigQuery dataset and table and Google Cloud projectId
 
