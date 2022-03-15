@@ -17,26 +17,28 @@ const onFlush = (records, error) => {
   }
 };
 
-const meter = apimeter({
-  projectId: "apimeter",
-  dataset: "dwh",
-  table: "apicalls",
-  onFlush,
-});
+app.use(
+  apimeter({
+    projectId: "apimeter",
+    dataset: "dwh",
+    table: "apicalls",
+    onFlush,
+  })
+);
 
-app.get("/api/cat", meter, (req, res) => {
+app.get("/api/cat", (req, res) => {
   res.send("Meow\n");
 });
 
-app.get("/api/cat/:id", meter, (req, res) => {
+app.get("/api/cat/:id", (req, res) => {
   res.send("Meow\n");
 });
 
-app.post("/api/cat", meter, (req, res) => {
+app.post("/api/cat", (req, res) => {
   res.send("Meow\n");
 });
 
-app.put("/api/cat/:id", meter, (req, res) => {
+app.put("/api/cat/:id", (req, res) => {
   res.send("Meow\n");
 });
 

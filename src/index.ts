@@ -19,12 +19,6 @@ export type OnFlush = (
   error?: Error
 ) => void;
 
-export interface IBigQueryOptions {
-  dataset: string;
-  table: string;
-  credentials?: any;
-}
-
 export interface IApiMeterOptions {
   maxBatchSize?: number;
   flushIntervalMilliseconds?: number;
